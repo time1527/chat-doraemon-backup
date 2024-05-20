@@ -1,4 +1,0 @@
-[submodule "agent/lagent"]
-	path = agent/lagent
-	url = https://github.com/InternLM/lagent.git
-	branch = main
