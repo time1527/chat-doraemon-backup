@@ -142,6 +142,13 @@ mkdir agent
 cd agent
 # 创建环境/已经有的话就别建了再
 studio-conda -t agent -o pytorch-2.1.2
+## 本地的话就：
+#
+# conda create -n agent python=3.10
+# conda activate agent
+# conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+#
+
 conda activate agent
 git clone https://github.com/InternLM/lagent.git
 cd lagent
