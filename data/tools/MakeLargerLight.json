@@ -1,0 +1,12 @@
+{
+    "name": "放大灯",
+    "image_path": "data/tools/content/make_bigger_light.webp",
+    "use": "用其光线照射就可以用来放大物体的体积与重量，再照一次便能恢复原状。",
+    "limit": "有时间限制，若不持续照射，一段时间后便会恢复原状。",
+    "other": "",
+    "theory": "",
+    "reference": [
+        "https://doraemon.fandom.com/zh/wiki/%E7%B8%AE%E5%B0%8F%E7%87%88",
+        "https://static.wikia.nocookie.net/doraemon/images/0/0b/Big.PNG/revision/latest?cb=20180411093431&path-prefix=zh-tw"
+    ]
+}
