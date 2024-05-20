@@ -1,0 +1,11 @@
+{
+    "name": "竹蜻蜓",
+    "image_path": "data/tools/content/bamboo_copter.webp",
+    "use": "竹蜻蜓的使用方法简单，只需把它戴在头上就可以通过大脑意念随意控制飞行，可任意随使用者想法以任何方向与动作飞行，而且不需要额外的动力，想去哪儿就去哪儿。只要把它放置在身体任何一处，（最常用的是在头顶）就能够以80公里的时速连续在空中飞行8小时（某些情况是4小时），只能前进640公里。没电时，休息20个小时还可以继续使用。竹蜻蜓不仅可以在空中使用，也可以在水中（即使在高水压的地方）使用，但是在暴风雨中使用会因抵挡不住强风而被吹飞，在极度低温下电池可能会因为冷却而无法正常工作。",
+    "other": "哆啦A梦用的竹蜻蜓是黄色，哆啦美用的竹蜻蜓是粉红色。",
+    "reference": [
+        "https://doraemon.fandom.com/zh/wiki/%E7%AB%B9%E8%9C%BB%E8%9C%93",
+        "https://baike.baidu.com/item/%E7%AB%B9%E8%9C%BB%E8%9C%93/9536826?lemmaFrom=lemma_starMap&fromModule=lemma_starMap&starNodeId=8a0f5539fd6403e5f74f8728&lemmaIdFrom=185384",
+        "https://static.wikia.nocookie.net/doraemon/images/8/81/%E7%AB%B9%E8%9C%BB%E8%9C%93%28%E5%A4%A7%E5%B1%B1%E7%89%88%E5%89%8D%E6%9C%9F%29.jpg/revision/latest?cb=20170205130247&path-prefix=zh-tw"
+    ]
+}
