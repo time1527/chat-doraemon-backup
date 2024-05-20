@@ -1,0 +1,4 @@
+[submodule "agent/lagent"]
+	path = agent/lagent
+	url = https://github.com/time1527/lagent.git
+	branch = main
