@@ -134,12 +134,11 @@ https://duola.huijiwiki.com/wiki/%E8%A7%92%E8%89%B2%E5%88%97%E8%A1%A8：角色�
 ## 环境
 
 ```bash
-cd ~
+cd ~ # cd到自己一个顺眼的路径就行。。。
 git clone https://github.com/time1527/chat-doraemon.git
 cd chat-doraemon/
-# 考虑切分支
-mkdir agent
-cd agent
+git submodule update --init --recursive
+cd agent/lagent/
 # 创建环境/已经有的话就别建了再
 studio-conda -t agent -o pytorch-2.1.2
 ## 本地的话就：
@@ -150,20 +149,16 @@ studio-conda -t agent -o pytorch-2.1.2
 #
 
 conda activate agent
-git clone https://github.com/InternLM/lagent.git
-cd lagent
-# main分支最新的一次commit
-git checkout 64ddf7b0d8adf29c5f859e3d7ec7fd01760ba58f
+# 这时的pwd是chat-doraemon/agent/lagent
 pip install -e . 
-pip install lmdeploy==0.4.1
 
 # 起api服务
-conda activate agent
-lmdeploy serve api_server /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-7b  --server-name 127.0.0.1  --model-name internlm2-chat-7b  --cache-max-entry-count 0.1
+# conda activate agent
+# lmdeploy serve api_server /root/share/new_models/Shanghai_AI_Laboratory/internlm2-chat-7b  --server-name 127.0.0.1  --model-name internlm2-chat-7b  --cache-max-entry-count 0.1
 # 再开一个terminal起前端
-streamlit run internlm2_agent_web_demo.py --server.address 127.0.0.1 --server.port 7860
+# streamlit run internlm2_agent_web_demo.py --server.address 127.0.0.1 --server.port 7860
 # 本地映射一下：我本地vscode远程的，起完前端点击本地右下角跳出来的那个链接进去，会报错大概是什么string indices must be integers
-ssh -CNg -L 7860:127.0.0.1:7860 -L 23333:127.0.0.1:23333 root@ssh.intern-ai.org.cn -p 你的 ssh 端口号
+# ssh -CNg -L 7860:127.0.0.1:7860 -L 23333:127.0.0.1:23333 root@ssh.intern-ai.org.cn -p 你的 ssh 端口号
 # 浏览器打开：http://localhost:7860
 # 模型IP修改：127.0.0.1:23333
 # 选tools
