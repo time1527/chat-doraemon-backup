@@ -292,5 +292,31 @@ action_list = [
 # 就可以跑啦～～
 ```
 
+## git操作
 
+```bash
+cd ~
+git clone https://github.com/time1527/chat-doraemon.git
+cd chat-doraemon
+git submodule update --init --recursive # 拉取chat-doraemon下的那个lagent commit-id
+# 假设当前 chat 的 main 分支 track agent/lagent 的 test 分支上的 v1 commit
+# 可通过 `git submodule status` 查看具体 commit-id
+# 接下来我需要本地同时对 chat 和 agent/lagent 的文件进行修改、调试
+# 一通操作，例如两边各创建一个文件，并且调试通过，此时需要同时更新两个 repo
+touch a.py
+touch agent/lagent/b.py
+git add a.py
+cd agent/lagent
+git add b.py
+git commit -m "add b.py"
+# 下面这行是为了将 agent/lagent 更新反馈到 remote
+git push origin HEAD:test
+# cd回chat-doraemon
+cd - # 自己看情况写，最后得回到chat-doraemon目录
+git add agent/lagent
+git commit -m "add a.py and update agent/lagent"
+git push origin
+```
+
+https://git-scm.com/docs/git-submodule
 
