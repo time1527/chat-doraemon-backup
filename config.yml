@@ -1,0 +1,10 @@
+# llm的接口地址
+llm_api_path : "http://localhost:23333/v1"
+# llm的名称
+llm_name : "internlm2-chat-7b"
+# embedding模型
+embedding_model_path : "/root/share/new_models/maidalun1020/bce-embedding-base_v1"
+# rerank模型
+rerank_model_path : "/root/share/new_models/maidalun1020/bce-reranker-base_v1"
+# streamlit启动的模型ip
+model_ip : "127.0.0.1:23333"
