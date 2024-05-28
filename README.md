@@ -42,6 +42,37 @@
 * 短期内考虑gradio/streamlit
 * 长期考虑unity
 
+## 快速开始
+### 下载仓库
+```bash
+cd ~
+git clone https://github.com/time1527/chat-doraemon.git
+cd chat-doraemon/
+git submodule update --init --recursive
+```
+
+### 安装环境
+```bash
+# 在intern-studio：
+studio-conda -t doraemon -o pytorch-2.1.2
+# 在本地：
+# conda create -n doraemon python=3.10 -y
+# conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia -y
+conda activate doraemon
+bash setup.sh
+```
+
+### 运行web demo
+```bash
+# 在第一个终端
+conda activate doraemon
+bash api_server.sh
+# 在第二个终端
+conda activate doraemon
+cd agent/lagent/examples
+streamlit run react_lmdeploy_web_demo.py --server.address 127.0.0.1 --server.port 7860
+```
+
 ## 进展
 
 - [x] 数据：经典道具数据：2024/05/20
@@ -50,6 +81,7 @@
 - [x] 数据：人物数据：2024/05/25
 - [x] agent：rag工具：2024/05/27
 - [x] agent：现代工具llm ranker：2024/05/27
+- [x] agent：现代工具remove image background：2024/05/27
 
 ## 参考
 

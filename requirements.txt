@@ -1,0 +1,10 @@
+aiohttp==3.9.5
+asyncio==3.4.3
+BCEmbedding==0.1.5
+faiss-gpu==1.7.2
+langchain==0.1.11
+lmdeploy==0.4.1
+openai==0.28.1
+playwright==1.44.0
+rembg==2.0.57
+sentence-transformers==2.7.0
