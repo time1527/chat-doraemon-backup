@@ -82,6 +82,7 @@ streamlit run react_lmdeploy_web_demo.py --server.address 127.0.0.1 --server.por
 - [x] agent：rag工具：2024/05/27
 - [x] agent：现代工具llm ranker：2024/05/27
 - [x] agent：现代工具remove image background：2024/05/27
+- [x] agent：现代工具文生图：2024/05/28
 
 ## 参考
 
