@@ -91,9 +91,9 @@ streamlit run react_lmdeploy_web_demo.py --server.address 127.0.0.1 --server.por
 
 | 成员                                        | 贡献                                                         |
 | ------------------------------------------- | ------------------------------------------------------------ |
-| [SunInCrack](https://github.com/SunInCrack) | agent：现代工具文生图<br />agent：现代工具翻译【WIP】<br />roleplay微调剧集数据：大山版台配陈美贞1980.434-456校对【WIP】 |
-| [time1527](https://github.com/time1527)     | 项目策划<br />agent：现代工具github trend/llm ranker/remove image background<br />roleplay微调剧集数据：大山版台配陈美贞1980.374-433校对<br />web demo v0<br />roleplay其他数据 |
-| [yolo.w](https://github.com/626394316)      | agent：动漫道具<br />agent：rag道具<br />roleplay微调剧集数据：大山版台配陈美贞1980.457-491校对<br />actions后处理<br />web demo v0.1 |
+| [SunInCrack](https://github.com/SunInCrack) | agent：现代工具文生图<br />agent：现代工具翻译【WIP】<br />roleplay微调剧集数据：大山版台配陈美贞1980.434-456校对<br />其他校对 |
+| [time1527](https://github.com/time1527)     | 项目策划<br />agent：现代工具github trend/llm ranker/remove image background<br />roleplay微调剧集数据：大山版台配陈美贞1980.374-433校对<br />web demo v0<br />roleplay其他数据<br />其他校对 | 
+| [yolo.w](https://github.com/626394316)      | agent：动漫道具<br />agent：rag道具<br />roleplay微调剧集数据：大山版台配陈美贞1980.457-491校对<br />actions后处理<br />web demo v0.1<br />其他校对 |
 
 
 ## 参考
